@@ -30,6 +30,7 @@ function varName=mygenvarname(signalName)
     varName = strrep(varName,'-','_hy_');  % Replace '-' with '_hy_'
     varName = strrep(varName,'.','p');     % Replace '.' with 'p'
     varName = strrep(varName,'$','S_');    % Replace '$' with 'd_'
+    varName = strrep(varName,'%','percent');    % Replace '%' with 'percent'
     %varName = strrep(varName,'.','_dot_'); % Replace '.' with '_dot_'
     
     if double(varName(1))>=48 & double(varName(1))<=57 % If starts with a number
